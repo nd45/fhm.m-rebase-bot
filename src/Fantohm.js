@@ -61,7 +61,7 @@ const getProtocolMetricsFromWebUI = async () => {
     const page = await browser.newPage();
     await page.goto(CONSTANTS.FHM_STATS_DASHBOARD_URL,
         {
-            waitUntil: 'networkidle0',
+            waitUntil: 'networkidle2',
             timeout: CONSTANTS.SCRAPER_PAGE_LOAD_TIMEOUT_MINS * 60 * 1000
         });
 
@@ -75,7 +75,7 @@ const getProtocolMetricsFromWebUI = async () => {
 
     await page.goto(CONSTANTS.FHM_STAKING_URL,
         {
-            waitUntil: 'networkidle0',
+            waitUntil: 'networkidle2',
             timeout: CONSTANTS.SCRAPER_PAGE_LOAD_TIMEOUT_MINS * 60 * 1000
         });
 
@@ -95,7 +95,7 @@ const getProtocolMetricsFromWebUI = async () => {
     //Moonriver stats
     await page.goto(CONSTANTS.FHM_STATS_DASHBOARD_URL,
         {
-            waitUntil: 'networkidle0',
+            waitUntil: 'networkidle2',
             timeout: CONSTANTS.SCRAPER_PAGE_LOAD_TIMEOUT_MINS * 60 * 1000
         });
 
@@ -105,7 +105,7 @@ const getProtocolMetricsFromWebUI = async () => {
 
     await page.goto(CONSTANTS.FHM_STATS_DASHBOARD_URL,
         {
-            waitUntil: 'networkidle0',
+            waitUntil: 'networkidle2',
             timeout: CONSTANTS.SCRAPER_PAGE_LOAD_TIMEOUT_MINS * 60 * 1000
         });
 
@@ -118,7 +118,7 @@ const getProtocolMetricsFromWebUI = async () => {
 
     await page.goto(CONSTANTS.FHM_STAKING_URL,
         {
-            waitUntil: 'networkidle0',
+            waitUntil: 'networkidle2',
             timeout: CONSTANTS.SCRAPER_PAGE_LOAD_TIMEOUT_MINS * 60 * 1000
 
         });
